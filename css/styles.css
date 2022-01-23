@@ -591,6 +591,80 @@ img {
   fill: currentColor;
 }
 
+.footer-send-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.footer-form-title {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  padding: 0 16px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 16px;
+
+  outline: none;
+  transition: border-color var(--transition-duration) var(--timing-function);
+}
+
+.footer-input:focus {
+  border-color: var(--accent-color);
+}
+
+.footer-input::placeholder {
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-btn {
+  position: relative;
+  text-align: center;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--second-text-color);
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.footer-icon-send {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transition: transform(-50%, -50%);
+  margin-left: 10px;
+  fill: var(--second-text-color);
+}
+
+/* .hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-highlights-color);
+} */
+
 /* ----------------PORTFOLIO SECTION --------------------- */
 
 .btn-list {
@@ -775,12 +849,11 @@ img {
 }
 
 .modal-btn-close {
+  position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 8px;
-  margin-right: 8px;
-  margin-left: auto;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
