@@ -1004,16 +1004,14 @@ img {
   fill: transparent;
 }
 
-.checkbox-text:checked + .checkbox-svg,
-.checkbox-text:checked + .checkbox-icon {
+.checkbox-text:checked + .checkbox-label.checkbox-svg {
   border: none;
   background-color: var(--accent-color);
+}
+
+.checkbox-text:checked + .checkbox-label.checkbox-icon {
   fill: var(--second-text-color);
 }
-/* 
-.checkbox-text:checked + .checkbox-icon {
-  fill: var(--second-text-color);
-} */
 
 .checkbox-label-link {
   text-decoration-line: underline;
