@@ -977,13 +977,11 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: var(--primary-text-color);
 }
 
 .checkbox-link {
   text-decoration-line: underline;
-
   color: var(--accent-color);
 }
 
@@ -1004,19 +1002,13 @@ img {
   fill: transparent;
 }
 
-.checkbox-text:checked + .checkbox-label.checkbox-svg {
+.checkbox-text:checked + .checkbox-label .checkbox-svg {
   border: none;
   background-color: var(--accent-color);
 }
 
-.checkbox-text:checked + .checkbox-label.checkbox-icon {
+.checkbox-text:checked + .checkbox-label .checkbox-icon {
   fill: var(--second-text-color);
-}
-
-.checkbox-label-link {
-  text-decoration-line: underline;
-
-  color: var(--accent-color);
 }
 
 .modal-btn {
